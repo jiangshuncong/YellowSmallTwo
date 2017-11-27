@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.hxe.platform.activity.MainActivity">
+
+    <LinearLayout
+        android:background="#03A9F4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/iv_wode"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="推荐"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/chuangzuo2"/>
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/fl_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#3333"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="90dp">
+
+       <LinearLayout
+           android:id="@+id/ll_tuijian"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_weight="1">
+
+           <ImageView
+               android:id="@+id/iv_tuijian"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/tuijian1"
+               />
+
+           <TextView
+               android:textColor="#C3C3C3"
+               android:textSize="20sp"
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="推荐"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_duanzi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_duanzi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/duanzi1"
+                />
+
+            <TextView
+                android:textColor="#C3C3C3"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="段子"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_shipin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_shipin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/shipin1"
+                />
+
+            <TextView
+                android:textColor="#C3C3C3"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="视 频"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
